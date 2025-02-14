@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตรวจเช็คเครื่องมือในแล็บ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>รายการเครื่องมือในห้องแล็บ</h1>
+    <input type="text" id="searchBox" placeholder="ค้นหาเครื่องมือ..." onkeyup="searchTools()">
+    <table>
+        <thead>
+            <tr>
+                <th>ชื่อเครื่องมือ</th>
+                <th>สถานะ</th>
+                <th>หมายเหตุ</th>
+            </tr>
+        </thead>
+        <tbody id="toolList">
+            <tr>
+                <td>กล้องจุลทรรศน์</td>
+                <td class="available">พร้อมใช้งาน</td>
+                <td>ใช้งานปกติ</td>
+            </tr>
+            <tr>
+                <td>เครื่องวัดค่า pH</td>
+                <td class="maintenance">อยู่ระหว่างซ่อม</td>
+                <td>คาดว่าซ่อมเสร็จภายในสัปดาห์นี้</td>
+            </tr>
+            <tr>
+                <td>เครื่องวิเคราะห์สเปกโตรโฟโตมิเตอร์</td>
+                <td class="available">พร้อมใช้งาน</td>
+                <td>สอบเทียบล่าสุดเมื่อเดือนที่แล้ว</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
+git init
+git remote add origin https://github.com/your-username/lab-tools-check.git
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git push -u origin main
